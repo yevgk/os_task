@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "shell",
+        "windows": {
+          "command": "g++",
+          "args": ["-g", "-o", "readdir_example", "main.c"],
+        },
+        "osx": {
+          "command": "clang",
+          "args": ["main.c", "-o", "readdir_example.out", "--debug"],
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+}
